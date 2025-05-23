@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Budget Dashboard</h1>
+  <p><strong>Income:</strong> $<%= income %></p>
+  <p><strong>Expense:</strong> $<%= expense %></p>
+  <p><strong>Balance:</strong> $<%= balance %></p>
+  
+  <a href="/add">Add Transaction</a>
+  
+  <h2>Transactions</h2>
+  <ul>
+    <% transactions.forEach(t => { %>
+      <li>
+        <%= t.date.toDateString() %> - 
+        <%= t.type %>: $<%= t.amount %> - 
+        <%= t.description %>
+      </li>
+    <% }) %>
+  </ul>
+  
+</body>
+</html>

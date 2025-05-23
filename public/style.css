@@ -1,0 +1,120 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    color: #333;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 40px;
+  }
+  
+  /* Header */
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 28px;
+  }
+  
+  /* Stats Summary */
+  p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  p strong {
+    color: #4b6cb7;
+  }
+  
+  /* Add Button */
+  a,
+  button {
+    display: inline-block;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  a:hover,
+  button:hover {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    transform: translateY(-2px);
+  }
+  
+  /* Form */
+  form {
+    margin-top: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  form button {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  /* Transactions List */
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    background-color: #f0f4f8;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-left: 6px solid #4b6cb7;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background 0.3s;
+  }
+  
+  li:hover {
+    background-color: #e0e7ef;
+  }
+  
